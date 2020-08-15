@@ -13,10 +13,10 @@ export class AppComponent {
   password = '';
 
   onChangeLength(value: string) {
-    const parsedValue = parseInt(value);
+    const parsedvalue = parseInt(value);
 
-    if (!isNaN(parsedValue)) {
-      this.length = parsedValue;
+    if (!isNaN(parsedvalue)) {
+      this.length = parsedvalue;
     } else {
       this.length = 0;
     }
