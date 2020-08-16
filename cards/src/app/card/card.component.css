@@ -1,0 +1,11 @@
+:host {
+  margin: 10px;
+}
+
+.card {
+  width: 350px;
+}
+
+.card .image img {
+  object-fit: cover;
+}
