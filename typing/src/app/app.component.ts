@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ComponentFactoryResolver } from '@angular/core';
 import { lorem } from 'faker';
 
 @Component({
@@ -8,4 +8,12 @@ import { lorem } from 'faker';
 })
 export class AppComponent {
   randomText: string = lorem.sentence();
+  enteredText: string;
+  showSuccess: boolean = false;
+
+  onInputChange(value: string) {
+    this.enteredText = value;
+
+    this.showSuccess = this.randomText === this.enteredText ? true : false;
+  }
 }
